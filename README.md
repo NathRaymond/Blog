@@ -11,4 +11,4 @@
 
 ## API Documentation
 
--   [Link to Postman Collection](link-to-postman-collection)
+-   [Link to Postman Collection](https://warped-shuttle-119419.postman.co/workspace/Team-Workspace~41e01340-7aac-4520-8ea7-3e3a2658b9dd/folder/22263981-03da17d3-1cad-418e-9e7d-184553c9616c?action=share&source=copy-link&creator=22263981&ctx=documentation)
