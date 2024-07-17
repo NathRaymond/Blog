@@ -24,7 +24,7 @@ class CommentController extends Controller
             $comment->post_id = $post->id;
             $comment->save();
 
-            return response()->json(['message' => 'Comment added successfully.', 'data' => $comment], 201);
+            return response()->json(['message' => 'Comment added successfully.', 'data' => $comment], 200);
         } catch (ValidationException $e) {
             return response()->json(['error' => 'Validation Error.', 'message' => $e->errors()], 422);
         } catch (\Exception $e) {

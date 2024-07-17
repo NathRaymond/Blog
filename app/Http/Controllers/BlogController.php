@@ -25,7 +25,7 @@ class BlogController extends Controller
 
             $blog = Blog::create($request->all());
 
-            return response()->json(['message' => 'Blog created successfully.', 'data' => $blog], 201);
+            return response()->json(['message' => 'Blog created successfully.', 'data' => $blog], 200);
         } catch (ValidationException $e) {
             return response()->json(['error' => 'Validation Error.', 'message' => $e->errors()], 422);
         } catch (\Exception $e) {

@@ -34,7 +34,7 @@ class PostController extends Controller
             $post->blog_id = $blog_id;
             $post->save();
 
-            return response()->json(['message' => 'Post created successfully.', 'data' => $post], 201);
+            return response()->json(['message' => 'Post created successfully.', 'data' => $post], 200);
         } catch (ValidationException $e) {
             return response()->json(['error' => 'Validation Error.', 'message' => $e->errors()], 422);
         } catch (ModelNotFoundException $e) {
